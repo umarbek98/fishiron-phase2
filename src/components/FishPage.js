@@ -21,7 +21,6 @@ function FishPage({fish, setFish}) {
 
   return (
     <main>
-      <NewFishForm setFish={setFish} />
       <Search search={search} setSearch={setSearch}/>
       <FishList setFish={setFish} search={search} fish={fish}/>
     </main>

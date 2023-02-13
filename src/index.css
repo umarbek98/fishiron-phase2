@@ -1,5 +1,5 @@
 :root {
-  --green: rgb(104, 240, 222);
+  --cyan: rgb(104, 240, 222);
 }
 
 * {
@@ -25,7 +25,7 @@ button {
 }
 
 button.primary {
-  background-color: var(--green);
+  background-color: var(--cyan);
   color: rgb(0, 0, 0);
 }
 
@@ -39,13 +39,26 @@ header h1 {
   font-weight: 900;
   text-align: center;
   padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.headerLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.new-button{
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  border: 2px solid;
 }
 
 .logo {
-  font-size: 1.25em;
-  padding-left: 0.5rem;
-  color: transparent;
-  text-shadow: 0 0 0 var(--green);
+  text-decoration: none;
 }
 
 main {
@@ -55,27 +68,35 @@ main {
 .new-fish-form {
   padding: 2rem 1rem;
   margin: 2rem 0;
-  background-color: rgba(149, 227, 245, 0.5);
+  text-align: center;
 }
 
 .new-fish-form form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin: 5px;
 }
 
 .new-fish-form input {
   margin-right: 2rem;
   flex: 1;
+  margin: 5px;
 }
 
 .new-fish-form button {
-  width: 150px;
+  margin: 5px;
 }
 
 .searchbar {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+#search:focus{
+    outline: none;
+    border-bottom: 2px solid var(--cyan);
 }
 
 label {
@@ -95,15 +116,25 @@ input {
 
 input:focus {
   outline: none;
-  border-bottom: 2px solid var(--green);
+  border-bottom: 2px solid var(--cyan);
 }
 
 .cards {
   list-style: none;
 }
 
+.card:hover{
+  border: 2px solid var(--cyan);
+  width: 280px;
+  transition: 2s;
+}
+
+.card:not(hover){
+  transition: 2s;
+}
+
 .card {
-  margin: 1rem;
+  margin: 8px;
   background-color: rgba(0, 255, 255, 0.182);
   border: 2px solid;
 }
