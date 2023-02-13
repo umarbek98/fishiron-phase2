@@ -3,19 +3,24 @@ import NewFishForm from "./NewFishForm";
 import FishList from "./FishList";
 import Search from "./Search";
 
-function FishPage() {
-  const [fish, setFish] = useState([])
+function FishPage({fish, setFish}) {
   const [search, setSearch] = useState('')
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:6001/plants')
+    fetch('http://localhost:6001/fish')
     .then(resp => resp.json())
     .then(setFish)
+    .then(setIsLoaded(true))
   }, [])
+
+ if(!isLoaded){
+  return <h1>Loading...</h1>
+ }
+
 
   return (
     <main>
-      <NewFishForm setFish={setFish} />
       <Search search={search} setSearch={setSearch}/>
       <FishList setFish={setFish} search={search} fish={fish}/>
     </main>
