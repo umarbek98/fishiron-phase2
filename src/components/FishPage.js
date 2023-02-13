@@ -3,8 +3,7 @@ import NewFishForm from "./NewFishForm";
 import FishList from "./FishList";
 import Search from "./Search";
 
-function FishPage() {
-  const [fish, setFish] = useState([])
+function FishPage({fish, setFish}) {
   const [search, setSearch] = useState('')
   const [isLoaded, setIsLoaded] = useState(false)
 
