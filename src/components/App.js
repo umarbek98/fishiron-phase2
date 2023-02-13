@@ -3,7 +3,7 @@ import Header from "./Header";
 import FishPage from "./FishPage";
 import { Route, Switch } from "react-router-dom";
 import FishInfo from "./FishInfo"
-
+import NewFishForm from "./NewFishForm";
 
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
       <Switch>
       <Route path = "/info">
         <FishInfo/>
+      </Route>
+      <Route path = "/newfishfrom">
+      <NewFishForm setFish={setFish} />
       </Route>
       <Route exact path = "/">
       <FishPage fish={fish} setFish={setFish}/>
