@@ -5,12 +5,19 @@ import Search from "./Search";
 
 function FishPage({fish, setFish}) {
   const [search, setSearch] = useState('')
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    fetch('https://www.fishwatch.gov/api/species')
+    fetch('http://localhost:6001/fish')
     .then(resp => resp.json())
     .then(setFish)
+    .then(setIsLoaded(true))
   }, [])
+
+ if(!isLoaded){
+  return <h1>Loading...</h1>
+ }
+
 
   return (
     <main>
