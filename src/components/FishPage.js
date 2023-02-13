@@ -3,12 +3,11 @@ import NewFishForm from "./NewFishForm";
 import FishList from "./FishList";
 import Search from "./Search";
 
-function FishPage() {
-  const [fish, setFish] = useState([])
+function FishPage({fish, setFish}) {
   const [search, setSearch] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:6001/plants')
+    fetch('https://www.fishwatch.gov/api/species')
     .then(resp => resp.json())
     .then(setFish)
   }, [])
