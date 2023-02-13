@@ -1,7 +1,5 @@
 import React from "react";
-
 function NewFishForm({setFish}) {
-
   function handleFishSubmit(e){
     e.preventDefault()
     const newFishData = {

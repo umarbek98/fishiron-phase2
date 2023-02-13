@@ -45,6 +45,7 @@ header h1 {
 .headerLink{
   text-decoration: none;
   color: inherit;
+  animation: buttonblink 2.5s linear infinite;
 }
 
 .new-button{
@@ -55,6 +56,17 @@ header h1 {
   display: flex;
   justify-content: center;
   border: 2px solid;
+}
+
+.new-button:hover{
+  border: 2px solid var(--cyan);
+  animation: buttonblink 1.5s linear infinite;
+}
+
+@keyframes buttonblink {
+  50%{
+    color: var(--cyan);
+  }
 }
 
 .logo {
@@ -97,6 +109,7 @@ main {
 #search:focus{
     outline: none;
     border-bottom: 2px solid var(--cyan);
+    animation: blinker 1s linear infinite;
 }
 
 label {
@@ -117,6 +130,7 @@ input {
 input:focus {
   outline: none;
   border-bottom: 2px solid var(--cyan);
+  animation: blinker 1s linear infinite;
 }
 
 .cards {
@@ -126,6 +140,7 @@ input:focus {
 .card:hover{
   border: 2px solid var(--cyan);
   width: 280px;
+  animation: blink 1s linear infinite;
   transition: 2s;
 }
 
@@ -137,6 +152,18 @@ input:focus {
   margin: 8px;
   background-color: rgba(0, 255, 255, 0.182);
   border: 2px solid;
+}
+
+@keyframes blink {
+  50% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes blinker {
+  50% {
+    border-bottom: 2px solid black;
+  }
 }
 
 .card img {
