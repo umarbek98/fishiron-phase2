@@ -6,12 +6,19 @@ import Search from "./Search";
 function FishPage() {
   const [fish, setFish] = useState([])
   const [search, setSearch] = useState('')
+  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:6001/plants')
+    fetch('http://localhost:6001/fish')
     .then(resp => resp.json())
     .then(setFish)
+    .then(setIsLoaded(true))
   }, [])
+
+ if(!isLoaded){
+  return <h1>Loading...</h1>
+ }
+
 
   return (
     <main>
