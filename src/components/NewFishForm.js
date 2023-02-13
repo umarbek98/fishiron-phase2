@@ -10,7 +10,7 @@ function NewFishForm({setFish}) {
       price: e.target.price.value
     }
 
-    fetch('http://localhost:6001/plants', {
+    fetch('http://localhost:6000/fish', {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json'
