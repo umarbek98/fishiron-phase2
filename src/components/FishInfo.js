@@ -5,9 +5,14 @@ import { useParams } from "react-router-dom";
 
 function FishInfo({fishInfo}) {
 
-
 return(
-   <div>{fishInfo.Taste}</div>
+   <div>
+   <section id = "Health Facts">
+      <h1>Health Facts:</h1>
+         <p>Calories: {fishInfo.Calories}</p>
+      
+   </section>
+</div>
 )
 
 }

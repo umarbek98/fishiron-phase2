@@ -23,7 +23,7 @@ function App() {
       <NewFishForm setFish={setFish} />
       </Route>
       <Route exact path = "/">
-      <FishPage setFishInfo={setFishInfo} fish={fish} setFish={setFish} fishInfo ={fishInfo}/>
+      <FishPage setFishInfo={setFishInfo} fish={fish} setFish={setFish}/>
       </Route>
       <FishCard></FishCard>
 

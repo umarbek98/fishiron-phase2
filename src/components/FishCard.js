@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {useHistory} from "react-router-dom";
 
-function FishCard({setFishInfo, fish, setFish}) {
+function FishCard({setFishInfo, fish}) {
   
   let history = useHistory()
   function fishInfo(e){
@@ -12,9 +12,9 @@ function FishCard({setFishInfo, fish, setFish}) {
 }
 
   return (
-    <li className="card">
+    <li className="card" onClick = {fishInfo}>
       <img src={fish["Species Illustration Photo"].src} alt={fish.name} 
-       onClick = {fishInfo} ></img>
+        ></img>
       <h4>{fish["Species Name"]}</h4>
       <br></br>
       <p><b>Availability</b>{fish.Availability}</p> 
