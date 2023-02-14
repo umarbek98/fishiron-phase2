@@ -29,9 +29,9 @@ function FishCard({setFishInfo, fish, setFish}) {
 }
 // console.log(newArr)
   return (
-    <li className="card">
+    <li className="card" onClick = {fishInfo}>
       <img src={fish["Species Illustration Photo"].src} alt={fish.name} 
-       onClick = {fishInfo} ></img>
+        ></img>
       <h4>{fish["Species Name"]}</h4>
       <br></br>
       <p><b>Availability</b>{fish.Availability}</p> 
@@ -42,4 +42,3 @@ function FishCard({setFishInfo, fish, setFish}) {
 
 export default FishCard;
 
-//I want to 

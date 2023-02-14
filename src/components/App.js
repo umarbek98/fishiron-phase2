@@ -19,11 +19,11 @@ function App() {
     <div className="app">
       <Header />
       <Switch>
-      <Route path = "/info/:name">
-        <FishInfo fishInfo={fishInfo}/>
+      <Route path = "/info">
+        <FishInfo fishInfo={fishInfo} fish = {fish}/>
       </Route>
       <Route exact path = "/">
-      <FishPage setFishInfo={setFishInfo} fish={fish} setFish={setFish} fishInfo ={fishInfo}/>
+      <FishPage setFishInfo={setFishInfo} fish={fish} setFish={setFish}/>
       </Route>
       <FishCard></FishCard>
 
