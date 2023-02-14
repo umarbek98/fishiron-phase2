@@ -44,9 +44,9 @@ function NewFishForm({setFish}) {
         <button style={{backgroundColor: 'rgb(104, 240, 222)', color: 'black'}} type="submit">Add Fish</button>
       </form>
       {formData.name ? <h1>Name: {formData.name}</h1> : null}
-      {formData.color ? <h1>Color: {formData.color}</h1> : null}
+      {formData.color ? <h2>Color: <b style={{color: `${formData.color}`}}>{formData.color}</b></h2> : null}
       {formData.calories ? <h2>Calories: {formData.calories}</h2>: null}
-      {formData.protein ? <h2>Protien: {formData.protien}</h2> : null }
+      {formData.protein ? <h2>Protien: {formData.protein}</h2> : null }
       <img src={formData.image}/>
     </div>
   );
