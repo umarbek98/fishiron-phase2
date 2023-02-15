@@ -1,15 +1,40 @@
 import React from "react";
-import FishCard from "./FishList"
 
 
+function FishInfo({fishInfo}) {
 
-function FishInfo({setFish, fish, search}) {
-    return (
- <div>
-    <p>test</p>
- </div>
+return(
+   <div>
+   <section id = "healthFacts">
+      <h1>Health Facts:</h1>
+         <p><b>Calories:</b> {fishInfo.Calories}</p>
+         <p>Carbohydrate: {fishInfo.Carbohydrate}</p>
+         <p>Cholesterol: {fishInfo.Cholesterol}</p>
+         <p>Fat: {fishInfo[`Fat, Total`]}</p>
+         <p>Protein: {fishInfo.Protein}</p>
+         <p>Sodium: {fishInfo.Sodium}</p>
+      
+   </section>
+   {fishInfo.Biology || fishInfo.Habitat || fishInfo.Location ? <section id = "inTheWildFacts">
+      <h1>In The Wild:</h1>
+         <p>Habitat: {fishInfo.Habitat}</p>
+         <p>Location {fishInfo.Location}</p>
+         <p>Biology: {fishInfo.Biology}</p>
+         <p>Physical Description: {fishInfo[`Physical Description`]}</p>
+      
+   </section> : null}
+   <section id = "fishingFacts">
+      <h1>Fishing Facts</h1>
+         <p>WAIT: {fishInfo[`Population Status`]}</p>
+         <p>Fishing Rate: {fishInfo[`Fishing Rate`]}</p>
+         <p>Habitat Vulnurabilites: {fishInfo[`Habitat Impacts`]}</p>
+         <p>Harvest Type: {fishInfo[`Harvest Type`]}</p>
+       
+      
+   </section>
+</div>
+)
 
-    );
-  }
-  
-  export default FishInfo;
+}
+
+export default FishInfo;
