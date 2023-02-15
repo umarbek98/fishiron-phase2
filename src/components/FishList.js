@@ -1,8 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import FishCard from "./FishCard";
 
 
-function FishList({setFishInfo, setFish, fish, search}) {
+function FishList({setFishInfo, setFish, fish, search,}) {
+
+
   return (
    <div>
     <ul className="cards">{fish.filter(fish => fish["Species Name"].toLowerCase().includes(search.toLowerCase()))
@@ -11,7 +14,6 @@ function FishList({setFishInfo, setFish, fish, search}) {
       fish={fish}
       setFish={setFish}
       setFishInfo={setFishInfo}
-
       />)}</ul>
       </div>
   );
