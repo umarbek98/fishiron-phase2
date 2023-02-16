@@ -56,6 +56,7 @@ header h1 {
   display: flex;
   justify-content: center;
   border: 2px solid;
+  background-color: rgba(127, 255, 212, 0.514);
 }
 
 .new-button:hover{
@@ -198,3 +199,58 @@ input:focus {
   }
 }
 
+<<<<<<< HEAD
+=======
+.infoContainer{
+  display: flex;
+  justify-content: center;
+}
+
+#healthFacts{
+  border: 2px solid black;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 5px;
+  background-color: rgba(127, 255, 212, 0.514);
+  animation: infoBorderBlinker 2.5s linear infinite;
+}
+
+#inTheWildFacts{
+  border: 2px solid black;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  overflow-x: hidden;
+  background-color: rgba(127, 255, 212, 0.514);
+  animation: infoBorderBlinker 2.5s linear infinite;
+}
+
+#fishingFacts{
+  border: 2px solid black;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  overflow-x: hidden;
+  background-color: rgba(127, 255, 212, 0.514);
+  animation: infoBorderBlinker 2.5s linear infinite;
+}
+
+@keyframes infoBorderBlinker{
+  50% {
+    border: 2px solid var(--cyan);
+  }
+}
+
+.infoImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 400px;
+  
+}
+>>>>>>> eb126194a9cf2720857d8e5b3d40de7161618ec1

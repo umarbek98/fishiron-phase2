@@ -6,7 +6,7 @@ function Header() {
     <header>
       <h1>
         <Link className='headerLink' to='/'>
-        Fishy
+        FishIron <b>//</b>
         <span role="img">
         🐟
         </span>

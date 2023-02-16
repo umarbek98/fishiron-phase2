@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "^5.2.3",
+=======
+    "bootstrap": "^3.4.1",
+>>>>>>> eb126194a9cf2720857d8e5b3d40de7161618ec1
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

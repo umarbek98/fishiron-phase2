@@ -21,9 +21,10 @@ function NewFishForm({setFish}) {
       "Carbohydrate": e.target.carbohydrate.value,
       "Fat, Total": e.target.fat.value,
       "Sodium": e.target.sodium.value,
-      "Population Status": e.target.population.target,
+      "Population": e.target.population.target,
       "Fishing Rate": e.target.rate.value,
       "Habitat Impacts": e.target.impact.value,
+      "Availability": e.target.availability.value,
       "Harvest Type": e.target.type.value,
       "Species Illustration Photo":{
         src: e.target.image.value
@@ -54,12 +55,13 @@ function NewFishForm({setFish}) {
         <input onChange={handleChange} value={formData.carbohydrate} type="text"  name="carbohydrate" placeholder="Fish Carbohydrate" />
         <input onChange={handleChange} value={formData.fat} type="text"  name="fat" placeholder="Fish Total Fat" />
         <input onChange={handleChange} value={formData.sodium} type="text"  name="sodium" placeholder="Fish Soidium" />
+        <input onChange={handleChange} value={formData.availability} type="text"  name="availability" placeholder="Fish Availability" />
         <input onChange={handleChange} value={formData.image} type="text"  name="image" placeholder="Image URL" />
         <h1>Fish Facts</h1> 
         <input onChange={handleChange} value={formData.population} type="text"  name="population" placeholder="Fish Population" />
         <input onChange={handleChange} value={formData.rate} type="text"  name="rate" placeholder="Fishing Rate" />
-        <input onChange={handleChange} value={formData.impact} type="text"  name="impact" placeholder="Fishing Rate" />
-        <input onChange={handleChange} value={formData.type} type="text"  name="type" placeholder="Fishing Rate" />
+        <input onChange={handleChange} value={formData.impact} type="text"  name="impact" placeholder="Fish Impact" />
+        <input onChange={handleChange} value={formData.type} type="text"  name="type" placeholder="Fish Type" />
         <button style={{backgroundColor: 'rgb(104, 240, 222)', color: 'black'}} type="submit">Add Fish</button>
       </form>
       {formData.name ? <h1>Name: {formData.name}</h1> : null}
