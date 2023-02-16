@@ -21,7 +21,7 @@ function NewFishForm({setFish}) {
       "Carbohydrate": e.target.carbohydrate.value,
       "Fat, Total": e.target.fat.value,
       "Sodium": e.target.sodium.value,
-      "Population Status": e.target.population.target,
+      "Population": e.target.population.target,
       "Fishing Rate": e.target.rate.value,
       "Habitat Impacts": e.target.impact.value,
       "Harvest Type": e.target.type.value,
