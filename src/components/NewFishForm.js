@@ -58,8 +58,8 @@ function NewFishForm({setFish}) {
         <h1>Fish Facts</h1> 
         <input onChange={handleChange} value={formData.population} type="text"  name="population" placeholder="Fish Population" />
         <input onChange={handleChange} value={formData.rate} type="text"  name="rate" placeholder="Fishing Rate" />
-        <input onChange={handleChange} value={formData.impact} type="text"  name="impact" placeholder="Fishing Rate" />
-        <input onChange={handleChange} value={formData.type} type="text"  name="type" placeholder="Fishing Rate" />
+        <input onChange={handleChange} value={formData.impact} type="text"  name="impact" placeholder="Fish Impact" />
+        <input onChange={handleChange} value={formData.type} type="text"  name="type" placeholder="Fish Type" />
         <button style={{backgroundColor: 'rgb(104, 240, 222)', color: 'black'}} type="submit">Add Fish</button>
       </form>
       {formData.name ? <h1>Name: {formData.name}</h1> : null}

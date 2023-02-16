@@ -197,3 +197,44 @@ input:focus {
     width: calc(20% - 2rem);
   }
 }
+
+.infoContainer{
+  display: flex;
+  justify-content: center;
+}
+
+#healthFacts{
+  border: 1px solid gray;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  background-color: rgba(127, 255, 212, 0.514);
+}
+
+#inTheWildFacts{
+  border: 1px solid gray;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  background-color: rgba(127, 255, 212, 0.514);
+}
+
+#fishingFacts{
+  border: 1px solid gray;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 5px;
+  overflow-x: hidden;
+  background-color: rgba(127, 255, 212, 0.514);
+}
+
+.infoImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 400px;
+}
