@@ -7,7 +7,7 @@ return(
    <div>
    <section id = "healthFacts">
       <h1>Health Facts:</h1>
-         <p><b>Calories:</b> {fishInfo.Calories}</p>
+         <p style = {{color: "red"}}><b>Calories:</b> {fishInfo.Calories}</p>
          <p>Carbohydrate: {fishInfo.Carbohydrate}</p>
          <p>Cholesterol: {fishInfo.Cholesterol}</p>
          <p>Fat: {fishInfo[`Fat, Total`]}</p>
@@ -25,7 +25,7 @@ return(
    </section> : null}
    <section id = "fishingFacts">
       <h1>Fishing Facts</h1>
-         <p>WAIT: {fishInfo[`Population Status`]}</p>
+         <p>Population: {fishInfo.Population}</p>
          <p>Fishing Rate: {fishInfo[`Fishing Rate`]}</p>
          <p>Habitat Vulnurabilites: {fishInfo[`Habitat Impacts`]}</p>
          <p>Harvest Type: {fishInfo[`Harvest Type`]}</p>

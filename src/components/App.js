@@ -11,6 +11,7 @@ import NewFishForm from "./NewFishForm";
 function App() {
   const [fish, setFish] = useState([])
   const [fishInfo, setFishInfo] = useState({})
+  const [showForm, setShowForm] = useState([true])
 
   return (
     <div className="app">
