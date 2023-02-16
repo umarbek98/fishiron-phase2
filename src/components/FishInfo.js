@@ -1,20 +1,26 @@
 import React from "react";
 
 
+
+
 function FishInfo({fishInfo}) {
 
 return(
-   <div>
-   <section id = "healthFacts">
-      <h1>Health Facts:</h1>
-         <p><b>Calories:</b> {fishInfo.Calories}</p>
-         <p>Carbohydrate: {fishInfo.Carbohydrate}</p>
-         <p>Cholesterol: {fishInfo.Cholesterol}</p>
-         <p>Fat: {fishInfo[`Fat, Total`]}</p>
-         <p>Protein: {fishInfo.Protein}</p>
-         <p>Sodium: {fishInfo.Sodium}</p>
-      
-   </section>
+ 
+  <div>
+  <section id = "healthFacts">
+ 
+   <h1>Health Facts</h1>
+       <select name = "healthfacts" id="info">
+        <p>Calories {fishInfo.Calories}</p>
+         <p>Carbohydrate {fishInfo.Carbohydrate}</p>
+         <p>Cholesterol{fishInfo.Cholesterol}</p>
+         <p>Fat{fishInfo[`Fat, Total`]}</p>
+         <p>Protein {fishInfo.Protein}</p>
+         <p>Sodium {fishInfo.Sodium}</p>
+         </select>
+         
+   </section> 
    {fishInfo.Biology || fishInfo.Habitat || fishInfo.Location ? <section id = "inTheWildFacts">
       <h1>In The Wild:</h1>
          <p>Habitat: {fishInfo.Habitat}</p>
