@@ -36,7 +36,7 @@ return(
          </section> : null}
          <section id = "fishingFacts">
             <h1>Fishing Facts</h1>
-               <p><b>WAIT:</b> {fishInfo[`Population Status`]}</p>
+               <p><b>WAIT:</b> {fishInfo.Population}</p>
                <br/>
                <p><b>Fishing Rate:</b> {fishInfo[`Fishing Rate`]}</p>
                <br/>
