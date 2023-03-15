@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FishIron-Phase2/static/css/main.1d417768.chunk.css",
-    "main.js": "/FishIron-Phase2/static/js/main.eef84210.chunk.js",
-    "main.js.map": "/FishIron-Phase2/static/js/main.eef84210.chunk.js.map",
-    "runtime-main.js": "/FishIron-Phase2/static/js/runtime-main.589bf3d8.js",
-    "runtime-main.js.map": "/FishIron-Phase2/static/js/runtime-main.589bf3d8.js.map",
-    "static/js/2.bb5a0bf6.chunk.js": "/FishIron-Phase2/static/js/2.bb5a0bf6.chunk.js",
-    "static/js/2.bb5a0bf6.chunk.js.map": "/FishIron-Phase2/static/js/2.bb5a0bf6.chunk.js.map",
-    "index.html": "/FishIron-Phase2/index.html",
-    "static/css/main.1d417768.chunk.css.map": "/FishIron-Phase2/static/css/main.1d417768.chunk.css.map",
-    "static/js/2.bb5a0bf6.chunk.js.LICENSE.txt": "/FishIron-Phase2/static/js/2.bb5a0bf6.chunk.js.LICENSE.txt"
+    "main.css": "/fishiron-phase2/static/css/main.1d417768.chunk.css",
+    "main.js": "/fishiron-phase2/static/js/main.eef84210.chunk.js",
+    "main.js.map": "/fishiron-phase2/static/js/main.eef84210.chunk.js.map",
+    "runtime-main.js": "/fishiron-phase2/static/js/runtime-main.a2d6c53c.js",
+    "runtime-main.js.map": "/fishiron-phase2/static/js/runtime-main.a2d6c53c.js.map",
+    "static/js/2.bb5a0bf6.chunk.js": "/fishiron-phase2/static/js/2.bb5a0bf6.chunk.js",
+    "static/js/2.bb5a0bf6.chunk.js.map": "/fishiron-phase2/static/js/2.bb5a0bf6.chunk.js.map",
+    "index.html": "/fishiron-phase2/index.html",
+    "static/css/main.1d417768.chunk.css.map": "/fishiron-phase2/static/css/main.1d417768.chunk.css.map",
+    "static/js/2.bb5a0bf6.chunk.js.LICENSE.txt": "/fishiron-phase2/static/js/2.bb5a0bf6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.589bf3d8.js",
+    "static/js/runtime-main.a2d6c53c.js",
     "static/js/2.bb5a0bf6.chunk.js",
     "static/css/main.1d417768.chunk.css",
     "static/js/main.eef84210.chunk.js"
